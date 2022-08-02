@@ -25,6 +25,10 @@ pip install -r docs/requirements.txt
 mkdocs serve
 ```
 
+$$
+\mathbb{E}[x] = \int_x x f(x) dx
+$$
+
 Using the example in your own project
 -------------------------------------
 
