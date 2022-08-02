@@ -1,7 +1,33 @@
+# For detailed options, visit https://www.mkdocs.org/user-guide/configuration/
+
+# Introduction
 site_name: My very first readthedocs try-out
+# site_url:
+repo_url:
+site_description:
+site_author:
+copyright:
+
+# Documentation layout
+nav:
+
+# Build directories
 theme:
   name: readthedocs
   highlightjs: true
+docs_dir: 'docs'
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+# Formatting
+markdown_extensions:
+  - markdown_include.include:
+      base_path: .
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
 plugins:
   - search
   - mkdocstrings:
@@ -10,14 +36,3 @@ plugins:
         python:
           options:
             docstring_style: sphinx
-markdown_extensions:
-  - markdown_include.include:
-      base_path: .
-  - admonition
-  - pymdownx.arithmatex:
-      generic: true
-
-extra_javascript:
-  - javascripts/config.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
