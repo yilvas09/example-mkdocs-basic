@@ -17,7 +17,9 @@ Things you'll need:
 > This block quote is here for your information.
 
 test  $2+3 \mathbb{A}$  
+
 dfa
+
 $$
 \mathtt{E}(x) = \int xf(x)dx
 $$
