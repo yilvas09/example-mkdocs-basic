@@ -29,7 +29,7 @@ $$
 \mathbb{E}[x] = \int_x x f(x) dx
 $$
 
-Using the example in your own project
+Using the template in your own project
 -------------------------------------
 
 If you are new to Read the Docs, you may want to refer to the [Read the Docs User documentation](https://docs.readthedocs.io/).
@@ -43,8 +43,7 @@ If you are copying this code in order to get started with your documentation, yo
 1. Rebuild the documenation locally to see that it works.
 1. *Finally*, register your project on Read the Docs, see [Importing Your Documentation](https://docs.readthedocs.io/en/stable/intro/import-guide.html).
 
-
-Read the Docs tutorial
-----------------------
-
-To get started with Read the Docs, you may also refer to the [Read the Docs tutorial](https://docs.readthedocs.io/en/stable/tutorial/). It provides a full walk-through of building an example project similar to the one in this repository.
+# Remarks
+* `docs/index.md` is the homepage of your documentation.
+* To add a new chapter, upload a file named `your subtitle` with `md` documents in it; to add new sections to an existing chapter, upload `md` files to the corresponding `subtitle` folder.
+* If you need to external packages or extension when rendering `md` files: (i) install the extension and check the rendered file locally; (ii) commit the updated `md` file to github; (iii) update `mkdocs.yml` and `docs/requirements.txt` to use the extensions on Read the Docs.
